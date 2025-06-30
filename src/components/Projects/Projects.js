@@ -21,28 +21,27 @@ function Projects() {
         {/* === SAME GRID SIZES AS BEFORE === */}
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={6} lg={4} className="project-card">
-            <ProjectCard
-              imgPath={GFLLogo}              // <- just swapped import
-              title="Games for Love (Remote, USA)"
-              description="
-                Built a real-time React + Spring dashboard, integrated GitHub & 
-                Discord APIs, and automated CI/CD with GitHub Actions + AWS 
-                CloudWatch—boosting live-event engagement by 35 %."
-              ghLink=""
-              demoLink=""
-            />
-          </Col>
-
-          <Col md={6} lg={4} className="project-card">
-            <ProjectCard
-              imgPath={VeltrisLogo}          
-              title="Veltris Technologies (Hyderabad, India)"
-              description="
-                Developed Spring Boot APIs and modular React checkout flows, tuned MongoDB indexes, and owned Jenkins pipelines—cutting cart abandonment by 25% and search latency by 60%"
-              ghLink=""
-              demoLink=""
-            />
-          </Col>
+  <div className="logo-wrapper">
+    <ProjectCard
+      imgPath={GFLLogo}
+      title="Games for Love (Remote, USA)"
+      description="Built a real-time React + Spring dashboard, integrated GitHub & Discord APIs, and automated CI/CD with GitHub Actions + AWS CloudWatch—boosting live-event engagement by 35%."
+      ghLink=""
+      demoLink=""
+    />
+  </div>
+</Col>
+<Col md={6} lg={4} className="project-card">
+  <div className="logo-wrapper">
+    <ProjectCard
+      imgPath={VeltrisLogo}
+      title="Veltris Technologies (Hyderabad, India)"
+      description="Developed Spring Boot APIs and modular React checkout flows, tuned MongoDB indexes, and owned Jenkins pipelines—cutting cart abandonment by 25% and search latency by 60%."
+      ghLink=""
+      demoLink=""
+    />
+  </div>
+</Col>
         </Row>
       </Container>
       <ScrollToTop />

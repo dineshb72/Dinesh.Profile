@@ -33,18 +33,16 @@ function About() {
             </div>
           </Col>
 
-          <Col
-            md={5}
-            style={{ paddingTop: "30px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img
-              src={laptopImg}
-              alt="about"
-              className="img-fluid"
-              data-aos="fade-left"
-            />
-          </Col>
+<Col md={5} style={{ paddingTop: "30px", paddingBottom: "50px" }} className="about-img">
+  <div className="about-img-wrapper">
+    <img
+      src={laptopImg}
+      alt="about"
+      className="img-fluid"
+      data-aos="fade-left"
+    />
+  </div>
+</Col>
         </Row>
 
         {/* Tech Stack */}
