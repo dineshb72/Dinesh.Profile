@@ -59,8 +59,8 @@ function Footer() {
                 <AiOutlineMail />
               </a>
             </li>
-            <li className="social-icons">
-              <a
+            {/* <li className="social-icons">
+             <a
                 style={{ color: `var(--clr-primary)` }}
                 className="linkedin"
                 href=""
@@ -70,7 +70,7 @@ function Footer() {
               >
                 <FaLinkedinIn />
               </a>
-            </li>
+            </li>  */} 
 <li className="social-icons">
               <a
                 style={{ color: `var(--clr-primary)` }}

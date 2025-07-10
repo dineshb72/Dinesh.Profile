@@ -82,7 +82,7 @@ function Home2() {
                   <AiOutlineMail />
                 </a>
               </li>
-              <li className="social-icons">
+             {/* <li className="social-icons">
                 <a
                   href="https://github.com/"
                   target="_blank"
@@ -92,8 +92,8 @@ function Home2() {
                 >
                   <FaLinkedinIn />
                 </a>
-              </li>
-            <li className="social-icons">
+              </li> */}
+            <li className="social-icons"> 
   <a
     href="tel:+13142036708"
     className="icon-colour home-social-icons"
