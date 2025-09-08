@@ -18,11 +18,11 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }} data-aos="fade-right">
-  <span className="primary-header"> ABOUT </span> ME
+  <span className="primary-header"> WHAT I </span> DO
 </h1>
 <p className="home-about-body" data-aos="fade-up">
   <br />
-  I'm a <i className="primary-header">Software Developer</i> with 4+ years of hands-on experience building scalable platforms using <i className="primary-header">Spring Boot</i>, <i className="primary-header">React.js</i>, and <i className="primary-header">AWS</i>.
+  I'm a <i className="primary-header">Software Developer</i> with 4+ years of hands-on experience building scalable platforms using <i className="primary-header">Spring Boot</i>, <i className="primary-header">React.js</i>, and <i className="primary-header">GCP</i>.
   <br /><br />
   I specialize in turning complex requirements into clean, modular systems that drive real-time performance, reduce engineering friction, and improve long-term maintainability.
   <br /><br />

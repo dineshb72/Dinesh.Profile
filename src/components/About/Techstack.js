@@ -16,6 +16,7 @@ import {
   SiRabbitmq,
   SiPostgresql,
   SiAmazonaws,
+  SiGooglecloud,
   SiKubernetes,
   SiJenkins,
   SiTerraform,
@@ -80,6 +81,9 @@ function Techstack() {
       {/* Cloud & DevOps */}
       <Col xs={4} md={2} className="tech-icons">
         <SiAmazonaws title="AWS" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGooglecloud title="Google Cloud Platform (GCP)" /> 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiDocker title="Docker" />
