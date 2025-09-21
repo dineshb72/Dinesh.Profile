@@ -147,15 +147,20 @@
 
 .home-about-description {
   color: var(--clr-txt) !important;
-  padding-top: 100px !important;
+  padding-top: 20px !important;
   padding-bottom: 20px !important;
   text-align: center !important;
+  margin: 0 auto !important;
 }
 
 .home-about-body {
-  padding-top: 50px;
+  padding-top: 10px;
   font-size: 1.2em !important;
   text-align: left;
+  text-align: center !important; 
+  max-width: 750px;
+  margin: 0 auto;
+
 }
 
 .home-about-social {
