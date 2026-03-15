@@ -1,45 +1,168 @@
-/* keep section spacing */
+/* section */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
+  overflow: hidden;
+  padding-top: 90px !important;
+  padding-bottom: 80px !important;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(186, 230, 253, 0.30), transparent 28%),
+    radial-gradient(circle at 80% 25%, rgba(254, 215, 170, 0.26), transparent 30%),
+    radial-gradient(circle at 65% 75%, rgba(196, 181, 253, 0.20), transparent 28%),
+    linear-gradient(135deg, #f8fafc 0%, #eef4ff 45%, #fff7ed 100%);
   background-color: var(--clr-bg) !important;
 }
 
-/* card container */
+/* floating ambient blobs */
+.project-section::before {
+  content: "";
+  position: absolute;
+  inset: -10%;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 18% 30%, rgba(96, 165, 250, 0.20), transparent 16%),
+    radial-gradient(circle at 78% 22%, rgba(251, 191, 36, 0.18), transparent 18%),
+    radial-gradient(circle at 60% 72%, rgba(168, 85, 247, 0.14), transparent 16%),
+    radial-gradient(circle at 35% 80%, rgba(45, 212, 191, 0.14), transparent 14%);
+  filter: blur(50px);
+  animation: projectFloatBg 16s ease-in-out infinite alternate;
+}
+
+/* floating "tool bubbles" */
+.project-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 16% 28%, rgba(255, 255, 255, 0.65) 0 22px, transparent 23px),
+    radial-gradient(circle at 30% 68%, rgba(255, 255, 255, 0.55) 0 34px, transparent 35px),
+    radial-gradient(circle at 50% 38%, rgba(255, 255, 255, 0.55) 0 28px, transparent 29px),
+    radial-gradient(circle at 72% 72%, rgba(255, 255, 255, 0.50) 0 30px, transparent 31px),
+    radial-gradient(circle at 84% 30%, rgba(255, 255, 255, 0.58) 0 24px, transparent 25px),
+    radial-gradient(circle at 10% 78%, rgba(255, 255, 255, 0.35) 0 10px, transparent 11px),
+    radial-gradient(circle at 88% 60%, rgba(255, 255, 255, 0.30) 0 12px, transparent 13px);
+  opacity: 0.55;
+  filter: blur(0.3px);
+}
+
+/* keep actual content above background layers */
+.project-section > .container,
+.project-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* heading spacing */
+.project-heading {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.project-section p {
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+
+/* card styling */
 .project-card-view {
-  background: transparent !important;
-  color: var(--clr-txt) !important;
-  box-shadow: var(--shadow) !important;
-  transition: transform 0.25s ease !important;
+  background: rgba(255, 255, 255, 0.68) !important;
+  color: #1f2937 !important;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.12),
+    0 2px 10px rgba(15, 23, 42, 0.06) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  border-radius: 14px;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 460px;
+  min-height: 340px;
 }
 
-/* smoother hover */
 .project-card-view:hover {
-  transform: translateY(-2px) !important;
+  transform: translateY(-6px);
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.16),
+    0 4px 14px rgba(15, 23, 42, 0.08) !important;
 }
 
-/* unified logo look */
+/* logo */
 .project-card-logo {
-  max-height: 120px;
-  padding: 18px;
+  max-height: 74px;
+  padding: 20px 20px 10px;
   object-fit: contain;
 }
 
-/* body & text */
+.paypal-logo {
+  max-height: 70px;
+}
+
+.zoho-logo {
+  max-height: 70px;
+}
+
+/* body */
+.project-card-view .card-body {
+  padding: 1.2rem 1.6rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-view .card-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 .project-card-text {
-  text-align: justify;
+  text-align: left;
+  line-height: 1.75;
+  font-size: 1.02rem;
+  color: #374151;
 }
 
-/* tighten default Bootstrap top image padding if needed */
-.card-img-top {
-  padding: 16px !important;
-  opacity: 0.9 !important;
-  border-radius: 10px !important;
+/* animation */
+@keyframes projectFloatBg {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(0, -12px, 0) scale(1.03);
+  }
 }
 
-/* small gap between rows on mobile/desktop already handled by gy-4 in Row */
+/* dark mode */
+body.dark .project-section,
+.dark .project-section {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.18), transparent 28%),
+    radial-gradient(circle at 80% 25%, rgba(251, 191, 36, 0.14), transparent 30%),
+    radial-gradient(circle at 65% 75%, rgba(139, 92, 246, 0.14), transparent 28%),
+    linear-gradient(135deg, #0b1220 0%, #111827 50%, #1f2937 100%);
+}
+
+body.dark .project-section::after,
+.dark .project-section::after {
+  opacity: 0.18;
+}
+
+body.dark .project-card-view,
+.dark .project-card-view {
+  background: rgba(17, 24, 39, 0.58) !important;
+  color: #f3f4f6 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.28),
+    0 2px 12px rgba(0, 0, 0, 0.18) !important;
+}
+
+body.dark .project-card-text,
+.dark .project-card-text {
+  color: #d1d5db;
+}

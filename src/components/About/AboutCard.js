@@ -8,7 +8,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0" data-aos="zoom-in">
           <p style={{ textAlign: "justify"}}>
-            Hello Everyone, Myself <span className="primary-header">Dinesh Bukya</span> - A Software Developer passionate about building scalable, real-time systems
+            Hello Everyone, Myself <span className="primary-header">Dinesh Bukya</span> - A Software Engineer passionate about building scalable, real-time systems
             <br />
             <br />
             Outside of delivering scalable features and solving production-level challenges,

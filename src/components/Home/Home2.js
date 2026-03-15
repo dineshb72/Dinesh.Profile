@@ -21,7 +21,7 @@ function Home2() {
 </h1>
 <p className="home-about-body" data-aos="fade-up">
   <br />
-  I'm a <i className="primary-header">Software Developer</i> with 4+ years of hands-on experience building scalable platforms using <i className="primary-header">Spring Boot</i>, <i className="primary-header">React.js</i>, and <i className="primary-header">GCP</i>.
+  I'm a <i className="primary-header">Software Engineer</i> with 4+ years of hands-on experience building scalable platforms using <i className="primary-header">Spring Boot</i>, <i className="primary-header">React.js</i>, and <i className="primary-header">GCP</i>.
   <br /><br />
   I specialize in turning complex requirements into clean, modular systems that drive real-time performance, reduce engineering friction, and improve long-term maintainability.
   <br /><br />
@@ -73,7 +73,7 @@ function Home2() {
               </li> */}
               <li className="social-icons">
                 <a
-                  href="mailto:bukyadinesh72@gmail.com"
+                  href="mailto:dineshbukya81@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -95,7 +95,7 @@ function Home2() {
               </li> */}
             <li className="social-icons"> 
   <a
-    href="tel:+13142036708"
+    href="tel:+14087134495"
     className="icon-colour home-social-icons"
     aria-label="Phone"
   >
