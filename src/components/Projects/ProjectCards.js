@@ -7,14 +7,20 @@ import { CgWebsite } from "react-icons/cg";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view h-100 w-100">
-<Card.Img
-  variant="top"
-  src={props.imgPath}
-  alt="card-img"
-  className={`project-card-logo ${props.logoClass || ""}`}
-/>
+      <Card.Img
+        variant="top"
+        src={props.imgPath}
+        alt="card-img"
+        className={`project-card-logo ${props.logoClass || ""}`}
+      />
+
       <Card.Body className="d-flex flex-column">
         <Card.Title>{props.title}</Card.Title>
+
+        {props.subtitle && (
+          <div className="project-card-date">{props.subtitle}</div>
+        )}
+
         <Card.Text className="project-card-text flex-grow-1">
           {props.description}
         </Card.Text>
@@ -33,4 +39,5 @@ function ProjectCards(props) {
     </Card>
   );
 }
+
 export default ProjectCards;

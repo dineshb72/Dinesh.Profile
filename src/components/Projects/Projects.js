@@ -28,6 +28,7 @@ function Projects() {
                 imgPath={PayPalLogo}
                 logoClass="paypal-logo"
                 title="PayPal"
+                subtitle="March 2025 – Present"
                 description="Built Spring Boot microservices on GCP with MySQL & Redis, integrated Kafka pipelines, and contributed to AI-assisted fraud detection—accelerating compliance audits and improving regulatory visibility."
               />
             </Col>
@@ -37,6 +38,7 @@ function Projects() {
                 imgPath={ZohoLogo}
                 logoClass="zoho-logo"
                 title="Zoho"
+                subtitle="May 2021 – Dec 2022"
                 description="Developed a real-time React + Spring Boot dashboard, integrated Discord & GitHub APIs, and automated deployments with GitHub Actions + AWS CloudWatch—raising live-stream event engagement by 35%."
               />
             </Col>

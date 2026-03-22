@@ -51,7 +51,7 @@ function Footer() {
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="email"
-                href="mailto:dineshbukya81@gmail.com"
+                href="mailto:dinesh.bukya11@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="email"
@@ -75,7 +75,7 @@ function Footer() {
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="Contact"
-                 href="tel:+14087134495"
+                 href="tel:+1(408)741-6721"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Contact"

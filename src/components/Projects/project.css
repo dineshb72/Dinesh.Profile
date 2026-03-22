@@ -166,3 +166,10 @@ body.dark .project-card-text,
 .dark .project-card-text {
   color: #d1d5db;
 }
+
+.project-card-date {
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}

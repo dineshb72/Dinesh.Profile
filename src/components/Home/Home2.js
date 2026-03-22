@@ -21,13 +21,10 @@ function Home2() {
 </h1>
 <p className="home-about-body" data-aos="fade-up">
   <br />
-  I'm a <i className="primary-header">Software Engineer</i> with 4+ years of hands-on experience building scalable platforms using <i className="primary-header">Spring Boot</i>, <i className="primary-header">React.js</i>, and <i className="primary-header">GCP</i>.
+  I build enterprise systems that work at scale, the kind where a single architectural decision affects billions of transactions, and a missed bug costs millions.
+  Across compliance, fintech, and enterprise platforms, I design and operate the backend infrastructure, databases, and data pipelines that power real-time decision making for some of the largest payment ecosystems in the world.
   <br /><br />
-  I specialize in turning complex requirements into clean, modular systems that drive real-time performance, reduce engineering friction, and improve long-term maintainability.
-  <br /><br />
-  Whether it’s reducing release cycles, optimizing cloud costs, or improving user flows — I focus on delivering outcomes that matter to both tech and business teams.
-  <br /><br />
-  I believe great software is not just about code — it’s about creating systems that scale, adapt, and leave a lasting impact.
+  When complex systems break under pressure, I find what others miss and build it back stronger.
 </p>
        
          </Col>
@@ -73,7 +70,7 @@ function Home2() {
               </li> */}
               <li className="social-icons">
                 <a
-                  href="mailto:dineshbukya81@gmail.com"
+                  href="mailto:dinesh.bukya11@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -95,7 +92,7 @@ function Home2() {
               </li> */}
             <li className="social-icons"> 
   <a
-    href="tel:+14087134495"
+    href="tel:+1(408)741-6721"
     className="icon-colour home-social-icons"
     aria-label="Phone"
   >
