@@ -38,7 +38,7 @@ function Projects() {
                 imgPath={ZohoLogo}
                 logoClass="zoho-logo"
                 title="Zoho"
-                subtitle="May 2021 – Dec 2022"
+                subtitle="July 2021 – Dec 2022"
                 description="Developed a real-time React + Spring Boot dashboard, integrated Discord & GitHub APIs, and automated deployments with GitHub Actions + AWS CloudWatch—raising live-stream event engagement by 35%."
               />
             </Col>
